@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <b>Preencha para usar a plataforma:</b><hr>
+    <form action="processa.html" method="post">
+        Login: <input type="text" name="login" size="30">
+        <br>Senha: <input type="password" name="senha" maxlength="8">
+        <input type="hidden" name="codigoacesso" value="código de usuário">
+        <br><br><input type="button" value="Acessar plataforma" onclick="Valida()">
+        <hr>
+        <b>Formulário com informações a serem preenchidas:</b><hr>
+        Estado civil:
+        <input type="radio" name="estcivil" checked>Solteiro(a)
+        <input type="radio" name="estcivil">Casado(a)
+        <input type="radio" name="estcivil">Víuvo(a)
+        <br>Mídia preferida:
+        <input type="checkbox" name="midia1">Rádio
+        <input type="checkbox" name="midia2" checked>Televisão
+        <input type="checkbox" name="midia3" checked>Internet
+        <br>Cidade de nascimento:
+        <select name="cidade">
+            <option value="porto" selected>Porto Alegre</opition>
+            <option value="torres">Torres</opition>
+            <option value="floripa">Florianópoles</opition>
+            <option value="criciuma">Críciúma</opition>
+            <option value="rio preto">São José do Rio Preto</opition>
+        </select>
+        <br><br>Esporte Favorito:
+        <select name="esportes" size="8" multiple>
+            <option value="corre">Corrida</opition>
+            <option value="nada">Natação</opition>
+            <option value="escala">Escalada</opition>
+            <option value="caminha">Caminhada</opition>
+            <option value="futebol">Futebol</opition>
+            <option value="basquete">Basquete</opition>
+            <option value="surfa">Surfe</opition>
+        </select>
+        <br><input type="submit" value="Enviar Dados...">
+        <input type="reset" value="Limpar Dados">
+    </form><hr>
+    <a href="index.html">Voltar</a>
+</body>
+</html>
